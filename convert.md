@@ -2,6 +2,8 @@
 
 resize *.jpg files to 2MP if they are bigger (in place, remove old file)
 
+video explanation: https://www.youtube.com/watch?v=AG0bItQLBdI
+
 ```bash
 for file in {*.jpg,*.JPG}; do
   mv "$file" "old$file"
@@ -13,6 +15,8 @@ done
 ### Videos
 
 convert video to webm
+
+video explanation: https://www.youtube.com/watch?v=bUkHPaOz9vg
 
 ```bash
 # slow version
