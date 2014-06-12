@@ -1,5 +1,16 @@
 package main
 
+/*
+
+Creates a very simple server and does some stuff with the request:
+- create a server and handle requests
+- handle form parameters
+- send a favicon on request from a byte slice
+- set the HTTP content type of a response header
+- set the HTTP status of a response
+
+*/
+
 import (
     "bytes"
     "fmt"
