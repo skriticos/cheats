@@ -24,8 +24,8 @@ Icon=fooview-new
 
 ### Locations
 
-$HOME/.local/share/applications
-$HOME/.local/share/icons
+- $HOME/.local/share/applications
+- $HOME/.local/share/icons
 
 ### Exec variables
 
