@@ -22,6 +22,11 @@ Name=Create a new Foo!
 Icon=fooview-new
 ```
 
+### Locations
+
+$HOME/.local/share/applications
+$HOME/.local/share/icons
+
 ### Exec variables
 
 | code | description |
