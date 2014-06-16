@@ -37,4 +37,5 @@
 ### SETUP USER FOR DATABASE
 
 - CREATE USER user\_name WITH PASSWORD 'myPassword';
+- ALTER DATABASE name OWNER TO new_owner;
 - GRANT ALL PRIVILEGES ON DATABASE dbname TO user\_name;
