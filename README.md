@@ -1,7 +1,7 @@
 chteats
 =======
 
-collection of cheatseets
+collection of cheatsheets
 
 recording
 ---------
