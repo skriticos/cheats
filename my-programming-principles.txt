@@ -1,0 +1,53 @@
+programming principles
+======================
+
+* do the tricky problems first
+  ----------------------------
+  -> avoids pushing them in front of you and get stuck
+
+* use many files
+  --------------
+  -> having big moster-files with all kind of stuff that does not
+     have much association is a good way to get lost in the code.
+     put stuff that belongs in the same file and nothing more.
+     don't hesitate to re-evaluate big files
+
+* create a quick prototype and then design the application
+  --------------------------------------------------------
+  -> creating an intricate design will fail you in implementation
+     without a prototype
+  -> but do a brainstorm before you begin with a solid set of features
+     for the prototype
+
+* document in code
+  ----------------
+  -> comment important stuff, not boilerplate
+  -> write a structural overview at the top of each source file
+
+* optimize late
+  -------------
+  -> don't get stuck over-optimizing stuff you'll probably discard the
+     next day
+  -> don't add bells and whistels before a you didn't publish at least
+     one stable version
+
+* ship 1.0 as soon as possible
+  ----------------------------
+  -> it's much more palpable to reason on a fixed version, which is not
+     the case before 1.0. make 1.0 as feature thin as possible while
+     still haveing the core funcitonality working
+
+* use version control
+  -------------------
+  -> keep a clean version history to aid fixing regressions
+  -> push your changes often to a remote repository to avoid data loss
+     for technical failure, softare issuse or user stupidity
+
+* use issue tracker after 1.0
+  ---------------------------
+  -> keeping stuff in an issue tracker moves it off your brain and
+     allows you to sort through it better
+
+* create a roadmap
+  ----------------
+  -> keep a good sense of progress
