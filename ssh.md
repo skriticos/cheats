@@ -4,7 +4,7 @@ On host migration/IP change, re-deploy SSH key.
 `ssh-keygen -f "/home/seth/.ssh/known_hosts" -R {hostname}`
 
 2. Redeploy key:
-`ssh-copy-id {username}@{hostname}
+`ssh-copy-id {username}@{hostname}`
 
 Background: my virtual host ISP moved my stuff to a new server again and that naturally breaks the ssh login (again) 
 besauce the IP changes and the host refuses to connect (which is good, don't want to trust just anyone). So to make
