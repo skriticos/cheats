@@ -14,6 +14,10 @@ Recording starts with a 10 second delay.
 Record desktop withouth crashing:
 
     avconv -f alsa -i hw:1,0 -f x11grab -s hd1080 -r 30 -i :0.0 out.mkv
+    
+or
+
+    avconv -f alsa -i hw:1,0 -f x11grab -s hd1080 -r 30 -i :0.0 out.mkv -delay 1 -vcodec libx264 -crf 0 -preset ultrafast -acodec pcm_s16le
 
 laptop
 ------
