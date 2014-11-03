@@ -1,3 +1,5 @@
+Collection of VIM shortcuts that are on my study plan, but not ingrained yet (for quick lookup).
+
 ## spelling
 
 | shortcut | explanation |
