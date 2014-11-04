@@ -17,11 +17,13 @@ Record desktop withouth crashing:
     
 or
 
-    avconv -f alsa -i hw:1,0 -f x11grab -s hd1080 -r 30 -i :0.0 out.mkv -delay 1 -vcodec libx264 -crf 0 -preset ultrafast -acodec pcm_s16le
+    avconv -f alsa -i hw:1,0 -f x11grab -s hd1080 -r 30 -i :0.0 out.mkv\
+    -delay 1 -vcodec libx264 -crf 0 -preset ultrafast -acodec pcm_s16le
     
 The newest incantation of avconv does realtime encoding without lag and ok quality at full hd resolution (notice how putting the output filename at the end will make this command invalid :p ):
 
-    avconv -c:v libx264 -crf 18 -preset veryfast -c:a libmp3lame -b:a 320k output.mp4 -f alsa -i hw:1,0 -f x11grab -s hd1080 -i :0.0
+    avconv -c:v libx264 -crf 18 -preset veryfast -c:a libmp3lame -b:a 320k \
+    output.mp4 -f alsa -i hw:1,0 -f x11grab -s hd1080 -i :0.0
 
 laptop
 ------
