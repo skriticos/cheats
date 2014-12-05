@@ -19,6 +19,6 @@ Cut out part of the video with second and millisecond precision. Note that webm 
 
 Merge MKV containers (note: this is not possible with MP4 containers):
 
-    mkvmerge -w -o test.webm test1.webm +test2.webm
+    mkvmerge -o test.webm test1.webm +test2.webm
   
 Note how the plus sign before the second video means that it is appended to the first one instead of some other way.
