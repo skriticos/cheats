@@ -1,0 +1,11 @@
+When eMail-ing plain text files to the Kindle, it processes some form of minimal markup that include emphasis, bulet
+points, monospace text and horizontal lines (plus probably more). Here is a description of what I found so far (mostly
+by accident):
+
+*emphasis*
+
+* bullet point
+
+==== horizontal line
+
+[some form of indent] monospace text
