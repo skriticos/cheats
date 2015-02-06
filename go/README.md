@@ -9,3 +9,4 @@ These are little functional source fies that test implement some functionality i
 | [stdin](https://github.com/skriticos/chteats/blob/master/go/stdin.go) | Read from standard input |
 | [template1](https://github.com/skriticos/chteats/blob/master/go/template1.go) | Simple executable text template with a conditional |
 | [struct-inheritence](https://github.com/skriticos/chteats/blob/master/go/struct-inheritence.go) | Example of how to create an inherited structure and initialize it with a method from the parent. |
+| [syslog](https://github.com/skriticos/chteats/blob/master/go/syslog.go) | Write a message to syslog. |
