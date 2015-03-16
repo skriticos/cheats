@@ -27,7 +27,7 @@ func main() {
 	}
 	b1 := make([]byte, 1)
 	// This works like rand.Intn(), but returns different sequences each
-	// time the program runs. It will never return a value above 127.
+	// time the program runs. Never returns values above 127.
 	getRand := func (limit int) int {
 		fp.Read(b1)
 		return int(b1[0]) % ( limit + 1)
@@ -44,18 +44,20 @@ func main() {
 
 		for i := 0; i<thinktime; i++ {
 
-			// Compute a random, printable character in the ASCII table. A
-			// rune is just an unsigned 32 bit number.
-			outrune := rune(getRand(94) + 32)
 			// Leave the previous character on the first run, otherwise
 			// clear it.
 			if i != 0 {
-				fmt.Printf("\b")
+				fmt.Printf("\b\b\b")
 			}
-			// Print the new, random character. Note how the number needs
-			// to be converted to a string for this to work.
-			fmt.Printf("%s", string(outrune))
-			// Sleep until next update.
+			for i := 0; i < 3; i++ {
+				// Compute a random, printable character in the ASCII
+				// table. A rune is just an unsigned 32 bit number.
+				outrune := rune(getRand(94) + 32)
+				// Print the new, random character. Note how the number
+				// needs to be converted to a string for this to work.
+				fmt.Printf("%s", string(outrune))
+				// Sleep until next update.
+			}
 			time.Sleep(pause)
 
 		}
