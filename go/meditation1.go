@@ -27,7 +27,7 @@ func main() {
 	}
 	b1 := make([]byte, 1)
 	// This works like rand.Intn(), but returns different sequences each
-	// time the program runs.
+	// time the program runs. It will never return a value above 127.
 	getRand := func (limit int) int {
 		fp.Read(b1)
 		return int(b1[0]) % ( limit + 1)
