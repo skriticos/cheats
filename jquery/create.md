@@ -21,4 +21,6 @@ Create nested elements with attributes using JQuery
 
 Append to element with specific ID:
 
+```
 $('#someid').append(...)
+```
