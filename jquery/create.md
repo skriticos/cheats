@@ -18,3 +18,7 @@ Create nested elements with attributes using JQuery
       <p></p>
   </div> ]
 ```
+
+Append to element with specific ID:
+
+$('#someid').append(...)
