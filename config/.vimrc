@@ -82,9 +82,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 set linebreak
-set textwidth=80
+"set textwidth=64
 set expandtab
-set nowrap
+set wrap
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " System interaction
@@ -159,11 +159,18 @@ highlight SpellLocal cterm=underline
 highlight clear Folded
 highlight Folded ctermfg=cyan guifg=cyan
 
+" set foldmethod=indent
+" recursively open fold
+" nmap <F1> zO
+" recursively close fold
+" nmap <F2> zC
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " === FILETYPE SPECIFIC OPTIONS ===
 
 autocmd filetype make   setlocal tw=80
-autocmd filetype go     setlocal tw=80
+"autocmd filetype go     setlocal tw=64
 autocmd filetype c      setlocal tw=80
 autocmd filetype cpp    setlocal tw=80
 autocmd filetype python setlocal tw=80
