@@ -159,11 +159,13 @@ highlight SpellLocal cterm=underline
 highlight clear Folded
 highlight Folded ctermfg=cyan guifg=cyan
 
-" set foldmethod=indent
-" recursively open fold
-" nmap <F1> zO
-" recursively close fold
-" nmap <F2> zC
+
+" show buffers with F12
+nnoremap <F12> :buffers<CR>:buffer<Space>
+" switch to alternate buffer (previous edited)
+nmap <F1> <C-^>
+" write all
+nmap <F2> :silent wa!<CR>:redraw!<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -175,7 +177,7 @@ autocmd filetype c      setlocal tw=80
 autocmd filetype cpp    setlocal tw=80
 autocmd filetype python setlocal tw=80
 
-autocmd filetype make   setlocal expandtab
+autocmd filetype make   setlocal noexpandtab
 autocmd filetype go     setlocal expandtab
 autocmd filetype c      setlocal noexpandtab
 autocmd filetype cpp    setlocal noexpandtab
@@ -191,3 +193,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " go fmt when writing go files
 autocmd BufWritePost *.go :!go fmt %
+
+set hidden
+
