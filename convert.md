@@ -21,9 +21,8 @@ video explanation: https://www.youtube.com/watch?v=bUkHPaOz9vg
 ```bash
 # slow version
 for file in {*.mp4,*.MP4}; do
-  newfile=`echo $file | sed -r 's/\.[[:alnum:]]+$//'`.webm
-  avconv -i "$file" -c:v libvpx -qmin 0 -qmax 50 -crf 10 -b:v 2M \
-    -c:a libvorbis -q:a 4 "$newfile"
+  newfile=`echo _$file`
+  ffmpeg -i "$file" -c:v libx264 -preset slow -crf 20 -c:a copy "$newfile"
 done
 ```
 
