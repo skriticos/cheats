@@ -30,6 +30,9 @@ for file in {*.mp4,*.MP4}; do
   newfile=`echo _$file`
   ffmpeg -i "$file" -c:v libx265 -preset medium -x265-params crf=20 -c:a copy -strict experimental "$newfile"
 done
+
+# delete originals
+find . \( -name "*.mp4" ! -name "_*.mp4" \) -delete
 ```
 
 ```bash
