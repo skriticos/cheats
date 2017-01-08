@@ -1,7 +1,12 @@
-chteats
-=======
+cheats
+======
 
 collection of cheatsheets
+
+dd
+--
+
+    dd bs=2M if=disk.img of=/dev/sda... status=progress iflag=direct oflag=direct
 
 recording
 ---------
